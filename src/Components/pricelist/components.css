@@ -1,0 +1,159 @@
+.search-input-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: none;
+    border-radius: 35px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: white;
+}
+
+.search-input:focus {
+    box-shadow: 0 6px 16px rgba(27, 133, 239, 0.25);
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    pointer-events: none;
+}
+
+/* Optional hover effect */
+.search-input:hover {
+    box-shadow: 0 6px 16px rgba(27, 133, 239, 0.2);
+}
+
+.main-control-wrapper{
+    padding:1em 2em 1em 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.main-item{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+
+.main-item-menu-buttons{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+    
+}
+
+/* Base button styles */
+.new-product-btn,
+.print-list-btn,
+.advanced-mode-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* New Products Button */
+.new-product-btn {
+    background-color: #1b85ef;
+    box-shadow: 0 4px 12px rgba(27, 133, 239, 0.25);
+}
+
+.new-product-btn:hover {
+    background-color: #1674d4;
+    box-shadow: 0 6px 16px rgba(27, 133, 239, 0.35);
+    transform: translateY(-1px);
+}
+
+/* Print List Button */
+.print-list-btn {
+    background-color: #2ecc71;
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.25);
+}
+
+.print-list-btn:hover {
+    background-color: #27ae60;
+    box-shadow: 0 6px 16px rgba(46, 204, 113, 0.35);
+    transform: translateY(-1px);
+}
+
+/* Advanced Mode Button */
+.advanced-mode-btn {
+    background-color: #9b59b6;
+    box-shadow: 0 4px 12px rgba(155, 89, 182, 0.25);
+}
+
+.advanced-mode-btn:hover {
+    background-color: #8e44ad;
+    box-shadow: 0 6px 16px rgba(155, 89, 182, 0.35);
+    transform: translateY(-1px);
+}
+
+/* Common active state for all buttons */
+.new-product-btn:active,
+.print-list-btn:active,
+.advanced-mode-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Icon styles */
+.new-product-btn .icon,
+.print-list-btn .icon,
+.advanced-mode-btn .icon {
+    font-size: 16px;
+}
+
+
+
+
+@media (max-width: 412px) { 
+    
+    .search-input-container{
+        flex-direction: column !important;
+    }
+
+    .main-control-wrapper{
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .main-item{
+        width: 100%;
+    }
+
+    .price-table-container{
+        margin-top:0px !important;
+        padding-top:1px !important;
+        
+    }
+    
+}

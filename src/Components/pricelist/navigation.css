@@ -1,0 +1,110 @@
+.main-nav{
+    height:auto;
+    display: flex;
+    padding: 1em 2.5em 1em 2.5em;
+    background-color: rgba(27, 133, 239, 0.912);
+}
+
+.userinfo-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+    width: 100%;
+}
+
+.user-avater{
+    display: flex;
+    position: relative;
+}
+
+.user-avater img {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+
+.user-avater .active{
+bottom:5px;
+right:0px;
+position:absolute;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: rgb(3, 245, 3);
+}
+
+.country-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width:max-content;
+    gap:10px;
+
+}
+
+.country-container p {
+    font-size: 0.8rem;
+}
+
+.country-container .flag {
+    font-size: .5rem;
+    width: 24px;
+    height: 18px;
+    border-radius: 20%;
+}
+
+/* Sive Navigation css */
+
+.sidenav{
+    max-width:max-content;
+    padding:1em;
+    min-width:200px;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    border-right: 1px solid rgb(160, 160, 160);
+    min-height: 100vh;
+
+}
+
+.sidenav .header{
+    display: flex;
+    justify-content: center;
+
+    padding:.3em;
+    border-bottom: 2px solid rgb(19, 170, 235);
+
+}
+.sidenav .list{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+.sidenav .list .list-item{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.sidenav .list .list-item .p{
+    font-size: .9rem;
+}
+
+.sidenav .list .list-item .icon{
+    width:20px;
+    height:20px;
+}
+
+@media (max-width: 1270px) {
+    .sidenav{
+        display: none !important;
+    }
+
+}
+

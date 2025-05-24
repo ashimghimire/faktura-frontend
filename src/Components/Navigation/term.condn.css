@@ -1,0 +1,97 @@
+.wrapper-term-condn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap:0.4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper-term-condn h1{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1rem;
+   
+}
+
+.terms-content{
+    background-color: #ffffff;
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+    border-radius: 1rem;
+    width: 51%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+   
+    height: auto;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2rem;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+    letter-spacing: 0.01em;
+    font-stretch: normal;
+    text-rendering: optimizeLegibility;
+}
+
+.terms-content p{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    width: auto;
+    font-stretch: normal;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+}
+
+.terms-content p:last-child {
+    margin-bottom: 0;
+}
+
+.wrapper-term-condn a{
+    border-radius: 2rem;
+    background-color: #059218;
+    color: #ffffff;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    min-width: 238px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.back-button {
+    font-size: 1.125em;
+    border-radius: 3rem;
+    color: white;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    background-color: rgb(8, 158, 30);
+    cursor: pointer;
+    width: 35vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-width: max-content;
+    max-width: 270px;
+
+}
+
+@media (max-width: 1270px) {
+    .terms-content{
+        width: 100%;
+    }
+    
+}
