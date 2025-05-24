@@ -1,5 +1,5 @@
 
-import './Landing.css';
+import './landing.css';
 import TermAndCondn from '../../Components/TermAndCondn';
 import Navigation from '../../Components/Navigation/Navigation';
 const Landing = () => {
